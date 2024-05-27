@@ -189,14 +189,14 @@ fig5 = px.bar(filtered_df, x = "Active_energy", y = "SectorD", orientation='h' )
 st.plotly_chart(fig5, use_container_width=True)
 
 st.subheader("Detalles de Clientes")
-#st.caption("Información de consumo de energía por clientes")
-#fig6 = px.bar(filtered_df, x = "Active_energy", y = "ClientesD", orientation='h' )
-#st.plotly_chart(fig6, use_container_width=True)
-with st.expander("Detalles de Clientes"):
-    st.write(filtered_df)
-    csv = filtered_df.to_csv(index = False).encode('utf-8')
-    st.download_button("Descargar Datos", data = csv, file_name = "Clientes.csv", mime = "text/csv",
-                        help = 'Click para descargar datos en formato CSV')
+st.caption("Información de consumo de energía por clientes")
+fig6 = px.bar(filtered_df, x = "Active_energy", y = "ClientesD", orientation='h' )
+st.plotly_chart(fig6, use_container_width=True)
+#with st.expander("Detalles de Clientes"):
+#    st.write(filtered_df)
+#    csv = filtered_df.to_csv(index = False).encode('utf-8')
+#    st.download_button("Descargar Datos", data = csv, file_name = "Clientes.csv", mime = "text/csv",
+#                        help = 'Click para descargar datos en formato CSV')
 
 st.subheader("Última actualización 2024-05-26")
 # scatter plot with Active_energy and Reactive_energy
