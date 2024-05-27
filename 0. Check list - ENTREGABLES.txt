@@ -1,0 +1,13 @@
+
+Url trabajo final y funcional: https://electrodunas.streamlit.app
+
+Listado de artefactos entregados:
+
+1. Manual de usuario (PDF). Estado: Ok
+2. Código fuente del Dashboard (Python). Estado: Ok
+3. Base de datos de clientes (SQLite). Estado: Ok
+4. Codigo del modelo. Estado Ok.
+5. Requerimientos: Estado Ok.
+6. Diagrama esquemático. Estado ok
+7. Experimentos. Estado ok
+
